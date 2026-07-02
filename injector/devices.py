@@ -458,8 +458,8 @@ DEVICES = [
         base=0xFFFF000050F00000
     ),
     Device(
-        'LJ6_v2',
-        'Tecno Pova 7 4G v2',
+        'LJ6_v3',
+        'Tecno Pova 7 4G v3',
         {
             'sec_get_vfy_policy': PatchStage(
                 'sec_get_vfy_policy',
@@ -467,13 +467,6 @@ DEVICES = [
                 replacement='00 00 80 52 fd 7b c1 a8',
                 match_mode=MatchMode.ALL,
                 description="Force return 0 (patch return value only)",
-            ),
-            'dont_relock_seccfg': PatchStage(
-                'dont_relock_seccfg',
-                pattern='fd 7b be a9 f3 0b 00 f9 fd 03 00 91 f3 03 00 2a 28 00 80 52',
-                replacement='00 00 80 52 c0 03 5f d6 1f 20 03 d5 1f 20 03 d5 1f 20 03 d5',
-                match_mode=MatchMode.ALL,
-                description='Prevent LK from relocking seccfg',
             ),
         },
         base=0xFFFF000050F00000
