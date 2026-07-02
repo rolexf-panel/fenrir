@@ -95,6 +95,7 @@ The following devices are currently supported:
 | Tecno Pova 4 | `LG7n` |
 | Tecno Pova 4 Pro | `LG8n` |
 | Tecno Pova 5 | `LH7n` |
+| Tecno Pova 7 4G | `LJ6` |
 | Zinwa Q25 | `Q25` |
 
 > [!NOTE]
