@@ -449,10 +449,10 @@ DEVICES = [
             ),
             'force_green_state': PatchStage(
                 'force_green_state',
-                pattern='00 9d 41 b9 c0 03 5f d6',
-                replacement='1f 91 41 b9 c0 03 5f d6',
+                pattern='00 91 41 b9',
+                replacement='1f 91 41 b9',
                 match_mode=MatchMode.ALL,
-                description='Force boot state to always be set to green',
+                description='Force boot state to always be set to green (patch setter)',
             ),
             'bypass_security_control': PatchStage(
                 'bypass_security_control',
